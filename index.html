@@ -1,132 +1,186 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Próbák</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"  ></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>
 
-    <style>
-      /* Make the image fully responsive */
-      .carousel-inner{
-        width: 100%;
-        height: 100%;
-      }
-      </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próbák</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
+
+  <style>
+    /* Make the image fully responsive */
+    .d-block {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
+
 <body>
 
-    <style>
-    
-        .cella {
-          border: 1px black solid;
-          background: #e2e2e2;
-          padding: 20px;
-          font-size: 18pt;
-          text-align: center;
-        }
-  
-      </style>
+  <style>
+    .cella {
+      border: 1px black solid;
+      background: #e2e2e2;
+      padding: 20px;
+      font-size: 18pt;
+      text-align: center;
+    }
+  </style>
 
 
 
-    <div id="tartalom" class="container">
-
-        <h1>Az első Bootstrap weblapom</h1>
-        <p>Ez pedig egy teszt szöveg.</p>
-        
-        <div class="row">
-          <div class="col-sm-4 cella">.col-sm-4</div>
-          <div class="col-sm-4 cella">.col-sm-4</div>
-          <div class="col-sm-4 cella">.col-sm-4</div>
+  <div id="tartalom" class="container">
+    <div class="container" style="background-image: url(kepek/kep4.jpg); height: 300px;">
+      <h1 class="text-white" style="text-align: center; padding-top: 100px;">Az első Bootstrap weblapom</h1>
+      <p class="text-white" style="text-align: center; font-size: 30px;">Ez pedig egy teszt szöveg.</p>
+    </div>
+    <div class="container" style="text-align: center; background-image: url(kepek/grey.png); height: 290px;">
+      <h1 class="text-primary">Szia Koma!</h1>
+      <h1 lass="text-primary">Ez pedig egy h1 címsor <small>-->Domináns</small></h1>
+      <h2 class="text-danger">Ez pedig egy h2 címsor<small>-->Kevésbé domináns </small></h2>
+      <h3 class="text-info">Ez pedig egy h3 címsor <small>-->Átlagos</small></h3>
+      <h4 class="text-warning">Ez pedig egy h4 címsor <small>-->Szerény</small></h4>
+      <h5 class="text-success">Ez pedig egy h5 címsor <small>-->Szerényebb</small></h5>
+      <h6 class="text-dark">Ez pedig egy h6 címsor<small>--> Közkatona</small></h6>
+    </div>
+    <!---------------------------          carousel                            -------------->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="kepek/kep3.jpg" class="d-block w-100" alt="...">
         </div>
-  
-        <div class="row">
-          <div class="col-sm-2 cella">.col-sm-2</div>
-          <div class="col-sm-6 cella">.col-sm-6</div>
-          <div class="col-sm-4 cella">.col-sm-4</div>
+        <div class="carousel-item">
+          <img src="kepek/kep1.jpg" class="d-block w-100" alt="...">
         </div>
-  
+        <div class="carousel-item">
+          <img src="kepek/kep2.jpg" class="d-block w-100" alt="...">
+        </div>
       </div>
-    
-     <div id="tartalom" class="container">
-
-        <div class="row">
-          <div class="col-sm-12 cella">
-            <h1>Az első Bootstrap weblapom</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-9 cella">tartalom</div>
-          <div class="col-sm-3 cella">oldalsáv</div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 cella">lábléc</div>
-        </div>
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="kepek/kep3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="kepek/kep1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="kepek/kep2.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-  
-  
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
 
 
-        <div class="container p-3 my-3 border">
-            <h1>Első lapocska</h1>
-            <p>This container has a border and some extra padding and margins.</p>
-          </div>
-          
-          <div class="container p-3 my-3 bg-dark text-white">
-            <h1>My First Bootstrap Page</h1>
-            <p>fekete alapon fehér szöveg.</p>
-          </div>
-          
-          <div class="container p-3 my-3 bg-primary text-white">
-            <h1>My First Bootstrap Page</h1>
-            <p>kék alapon fehér szöveg</p>
-          </div>
-          
-          <div class="container-fluid">
-            <h1>3 egyenlő oszlop</h1>
-            <p>Nagyon komoly weblap</p>
-            <div class="row">
-              <div class="col" style="background-color:lavender;">.col</div>
-              <div class="col" style="background-color:orange;">.col</div>
-              <div class="col" style="background-color:lavender;">.col</div>
-            </div>
-          </div>
-  
 
-      <br><br>
-         
-              
-     
+
+    <div class="row">
+      <div class="col-sm-4 cella bg-primary text-white">.col-sm-4</div>
+      <div class="col-sm-4 cella bg-warning">.col-sm-4</div>
+      <div class="col-sm-4 cella bg-success text-white">.col-sm-4</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2 cella bg-secondary ">.col-sm-2</div>
+      <div class="col-sm-6 cella bg-danger text-white">.col-sm-6</div>
+      <div class="col-sm-4 cella bg-dark text-white">.col-sm-4</div>
+    </div>
+
+  </div>
+
+  <div id="tartalom" class="container">
+
+    <div class="row">
+      <div class="col-sm-12 cella bg-info text-white">
+        <h1>Az első Bootstrap weblapom</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9 cella text-white">tartalom</div>
+      <div class="col-sm-3 cella">oldalsáv</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 cella ">lábléc</div>
+    </div>
+
+
+
+    <!--táblázat jele nesetbe fekete-->
+    <div class="container">
+      <h2>Egeres fekete Tabla komoly funkciokkal!!!!</h2>          
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th>Helyiség</th>
+            <th>Információ</th>
+            <th>Képek</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Göncruszka</td>
+            <td><a href="https://hu.wikipedia.org/wiki/G%C3%B6ncruszka">https://hu.wikipedia.org/wiki/G%C3%B6ncruszka</a></td>
+            <td><a href="https://www.google.com/search?q=g%C3%B6ncruszka&rlz=1C1CHBD_huHU918HU918&sxsrf=ALeKk03osBXyClm9w1Z3ESzUzcYrjjJvWA:1611738876355&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjFiciZ47vuAhVJxosKHSRJBOwQ_AUoAnoECBMQBA&biw=1920&bih=950">Képekért kattints!</a></td>
+          </tr>
+          <tr>
+            <td>Nyírjákó</td>
+            <td><a href="https://hu.wikipedia.org/wiki/Ny%C3%ADrj%C3%A1k%C3%B3">https://hu.wikipedia.org/wiki/Ny%C3%ADrj%C3%A1k%C3%B3</a></td>
+            <td><a href="https://www.google.com/search?q=ny%C3%ADrj%C3%A1k%C3%B3&rlz=1C1CHBD_huHU918HU918&hl=hu&sxsrf=ALeKk02GDopUJNQWAa6xCkyZbwfu0apBcQ:1611739020170&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi-6pHe47vuAhVEAxAIHcyAB7YQ_AUoAnoECAkQBA&biw=1920&bih=950">Képekért kattints!</a></td>
+          </tr>
+          <tr>
+            <td>Borbánya</td>
+            <td><a href="https://hu.wikipedia.org/wiki/Borb%C3%A1nya">https://hu.wikipedia.org/wiki/Borb%C3%A1nya</a></td>
+            <td><a href="https://www.google.com/search?q=borb%C3%A1nya&rlz=1C1CHBD_huHU918HU918&hl=hu&sxsrf=ALeKk03gUKAWqei_gDo4X_l8H83gex8WQQ:1611739071655&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiUodj247vuAhVlmMMKHcAzAFQQ_AUoAnoECAYQBA&biw=1920&bih=950">Képekért kattints!</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!--kepekk -->
+    <div class="container">
+    <img src="kepek/leg.jpg" class="rounded col-12  col-xl-4  col-sm-4  col-lg-4 fluid " alt="Lufiiiii">
+    <img src="kepek/leg2.jpg" class="rounded-circle col-12 col-xl-4 col-sm-4 col-lg-4  fluid " alt="Komoly">
+    <img src="kepek/leggomb.jpg" class="img-thumbnail col-12 col-xl-4 col-sm-4 col-lg-4 fluid float-right " alt="KLufika">
+    </div>
+
+   
+
+
+    <div class="container p-3 my-3 border">
+      <h1>Első lapocska</h1>
+      <p>Itt van biza belső és külső margó változatás is ;))</p>
+    </div>
+
+    <div class="container p-3 my-3 bg-dark text-white">
+      <h1>Becsülendő Munka</h1>
+      <p>fekete alapon fehér szöveg.</p>
+    </div>
+
+    <div class="container p-3 my-3 bg-primary text-white">
+      <h1>:)))))))))))))))))))))))))))))))))))))))))))))))))))))))))</h1>
+      <p>kék alapon fehér szöveg</p>
+    </div>
+
+    <div class="container-fluid">
+      <h1>3 egyenlő oszlop</h1>
+      <p>Nagyon komoly weblap</p>
+      <div class="row">
+        <div class="col" style="background-color:lavender;">.col</div>
+        <div class="col" style="background-color:orange;">.col</div>
+        <div class="col" style="background-color:lavender;">.col</div>
+      </div>
+    </div>
+
+
+    <br><br>
+
+
+
 
 
 
@@ -134,4 +188,5 @@
 
 
 </body>
+
 </html>
